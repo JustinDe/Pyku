@@ -13,13 +13,13 @@ class Index:
 	haiku = ["","",""]
 	def __init__(self):
 		self.haikuForm = form.Form(
-			form.Textbox("firstLine", description="5:", value="This is a haiku"),
-			form.Textbox("secondLine", description="7:", value="Enter your haiku right here"),
-			form.Textbox("thirdLine", description="5:", value="This one kind of sucks"),
-			form.Button("Submit", type="submit", description="btnSubmit", class_="button-primary")
+			form.Textbox("firstLine", description="5:", value="This is a haiku", class_="entry-line eleven columns"),
+			form.Textbox("secondLine", description="7:", value="Enter your haiku right here", class_="entry-line eleven columns"),
+			form.Textbox("thirdLine", description="5:", value="This one kind of sucks", class_="entry-line eleven columns"),
+			form.Button("Submit", type="submit", description="btnSubmit", class_="button-primary eleven columns")
 		)
 		self.twitterSubmit = form.Form(
-			form.Button("Tweet", type="submit", description="btnSubmit")
+			form.Button("Tweet", type="submit", description="btnSubmit", class_="button-primary eleven columns")
 		)
 	def GET(self,urls):
 		self.sylCount = [0,0,0]

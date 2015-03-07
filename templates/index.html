@@ -10,12 +10,14 @@ $def with(form, sylCount, status, haiku)
 		<link rel="stylesheet" type="text/css" href="static/css/style.css">
 	</head>
 	<body>
-		<h1 id="status">$status</h1>
-		<form method="POST">
-			<!--<div id="haikuLine1">$haiku[0]</div><div id="sylCount1">$sylCount[0]</div>
-			<div id="haikuLine2">$haiku[1]</div><div id="sylCount2">$sylCount[1]</div>
-			<div id="haikuLine3">$haiku[2]</div><div id="sylCount3">$sylCount[2]</div>-->
-			$:form.render()		
-		</form>
+		<center>
+			<h1 id="status">$status</h1>
+			<form method="POST" class="eleven columns">
+				<h2 id="haikuLine1">$haiku[0]</h2>
+				<h2 id="haikuLine2">$haiku[1]</h2>
+				<h2 id="haikuLine3">$haiku[2]</h2>
+				$:form.render()		
+			</form>
+		</center>
 	</body>
 </html>
