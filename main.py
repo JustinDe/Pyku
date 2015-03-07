@@ -16,7 +16,7 @@ class Index:
 			form.Textbox("firstLine", description="5:", value="This is a haiku"),
 			form.Textbox("secondLine", description="7:", value="Enter your haiku right here"),
 			form.Textbox("thirdLine", description="5:", value="This one kind of sucks"),
-			form.Button("Submit", type="submit", description="btnSubmit")
+			form.Button("Submit", type="submit", description="btnSubmit", class_="button-primary")
 		)
 		self.twitterSubmit = form.Form(
 			form.Button("Tweet", type="submit", description="btnSubmit")
